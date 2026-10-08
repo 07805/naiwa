@@ -1,0 +1,20 @@
+{
+  "name": "dsh-naiwa-entrance",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "奶蛙变身动画（手动触发）：帝皇法阵 + 金线勾轮廓 + 甲片飞入合体 + 爆闪出图",
+  "license": "MIT",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "tools", "cordis.patch.yml", "README.md", "INSTALL.md", "LICENSE"],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": { "platform": "web", "immediately": true }
+  },
+  "engines": { "node": ">=22" }
+}
